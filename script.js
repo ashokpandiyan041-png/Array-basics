@@ -19,10 +19,10 @@ const numbers = [10, 20, 30, 40];
 // }
 
 //for..in loop
-// for(let k in numbers){
-//     console.log(k,":",numbers[k]);
+for(let k in numbers){
+    console.log(numbers[k]);
     
-// }
+}
 
 
 //2) — Loop Through an Object
@@ -48,6 +48,14 @@ const student = {
 
 //4 — Using filter()
 
-const values = [5, 12, 8, 25, 3, 15];
-const finalvalues=values.filter(num=>num>=10)
-console.log(finalvalues);
+// const values = [5, 12, 8, 25, 3, 15];
+// const finalvalues=values.filter(num=>num>10)
+// console.log(finalvalues);
+
+//5-using reduce()
+
+const arr = [5, 10, 15, 20];
+
+const total = arr.reduce((sum, num) => sum + num, 0);
+
+console.log(total);
